@@ -14,8 +14,7 @@ export const AlquilarLibro = () => {
   const navigate = useNavigate();
 
   const [diasAlquiler, setDiasAlquiler] = useState("");
-  const [cedula, setCedula] = useState("");
-  const [nombre, setNombre] = useState("");
+
 
   const handleDiasAlquilerChange = (e) => {
     setDiasAlquiler(e.target.value);
@@ -60,6 +59,7 @@ export const AlquilarLibro = () => {
             id="diasAlquiler"
             value={diasAlquiler}
             onChange={handleDiasAlquilerChange}
+            min="1"
           />
           <br/>
           <button className="confirmar-button" onClick={handleConfirmarClick}>Confirmar</button>
