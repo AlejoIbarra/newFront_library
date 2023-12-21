@@ -1,0 +1,414 @@
+.main-page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.libros-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.libro-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.libro-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+.libro-details {
+    padding: 15px;
+
+    .h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .p {
+        margin: 0;
+        color: #666;
+    }
+
+    .price {
+        font-weight: bold;
+        color: #28a745;
+    }
+
+    .quantity {
+        color: #dc3545;
+    }
+}
+
+.linear-progress {
+    margin-top: 20px;
+}
+
+/*Bienvenida*/
+.bienvenida-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.bienvenida-content {
+    text-align: center;
+}
+
+.bienvenida-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.bienvenida-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 2px solid #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bienvenida-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Header.css */
+.header {
+    background-color: #4caf50;
+    padding: 20px;
+    text-align: left;
+}
+
+.header-text {
+    color: white;
+    margin: 0;
+    align-content: start;
+}
+
+/* Footer.css */
+
+.header-footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-footer-text {
+    color: white;
+    margin: 0;
+}
+
+/* Libro.css */
+
+.ver-detalles-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ver-detalles-btn:hover {
+    background-color: #0056b3;
+}
+
+.libro-image {
+    max-width: 88%;
+    height: auto;
+}
+
+/* LibroDetails.css */
+
+.libro-details-container {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.libro-details-image {
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+.libro-details-content {
+    flex: 1;
+}
+
+.libro-details-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.volver-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.volver-button:hover {
+    background-color: #0056b3;
+}
+
+/*Alquilar*/
+
+.libro-details-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.libro-details-image {
+    max-width: 300px;
+    height: auto;
+}
+
+.alquilar-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alquilar-button:hover {
+    background-color: #0056b3;
+}
+
+
+.confirmar-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirmar-button:hover {
+    background-color: #45a049;
+}
+
+
+/*Not Found*/
+
+.libro-not-found {
+    color: #ff0000;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.libro-details-content h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.libro-details-content p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #282c34;
+}
+
+.libro-details-content label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.libro-details-content input {
+    width: 65%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* RedireccionesMenu */
+
+.home-icon {
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    padding-right: 40px;
+    float: right;
+}
+
+/* carrito.css */
+
+.carrito-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.alquiler-item {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.alquiler-item strong {
+    color: #191a19;
+}
+
+.carrito-container p {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+}
+
+/*Usuario*/
+
+.usuario {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.usuario__icono {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.usuario__nombre,
+.usuario__edad {
+    margin: 0;
+}
+
+.usuario__nombre {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+}
+
+.usuario__edad {
+    font-size: 16px;
+    color: #1c1b1b;
+}
+
+.usuario__deudas {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*Buscador*/
+
+.busqueda-container {
+    margin-bottom: 20px;
+}
+
+.busqueda-input {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/*App*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    min-height: 100%;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    height: 50px;
+    background-color: #f2f2f2;
+    text-align: center;
+    line-height: 50px;
+}
+
+/*Page Carrito*/
+.container__page__carrito {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-title__page__carrito {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.button__eliminar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #ff0000;
+    font-size: 1.2rem;
+}
+
+.button__eliminar:hover {
+    color: #cc0000;
+}
+
+

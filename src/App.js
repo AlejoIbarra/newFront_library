@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useLibros } from "./hooks/useLibros";
+import { LibroContext } from "./context/LibroContext";
+import { AlquilerContext } from "./context/AlquilerContext";
+import { Footer } from "./components/Footer";
+import { GlobalRouter } from "./routes/GlobalRouter";
+import { useAlquiler } from "./hooks/useAlquiler";
 
 function App() {
+  const libros = useLibros();
+  const alquiler = useAlquiler();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AlquilerContext.Provider value={alquiler}>
+      <LibroContext.Provider value={libros}>
+        <GlobalRouter />
+        <Footer />
+      </LibroContext.Provider>
+    </AlquilerContext.Provider>
   );
 }
 
