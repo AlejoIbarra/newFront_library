@@ -2,8 +2,7 @@ import React, { useContext } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { LibroContext } from '../context/LibroContext';
 import { LibroNotFound } from './LibroNotFound';
-import "../styles/styles.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Reply,Rocket } from 'react-bootstrap-icons';
 
 
@@ -53,7 +52,7 @@ export const LibroDetails = () => {
                         </div>
                           <div class="card-footer">
 
-                              <Link to={`/alquilar/${libro.id}`} className="btn btn-dark w-100">  
+                              <Link to={`/alquilar/${libro.id}`} className="btn btn-outline-dark w-100">
                                   Alquilar <Rocket/>                                              
                               </Link>                                                             
                           </div>

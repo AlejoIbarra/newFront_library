@@ -5,7 +5,7 @@ import { AlquilerContext } from "./context/AlquilerContext";
 import { Footer } from "./components/Footer";
 import { GlobalRouter } from "./routes/GlobalRouter";
 import { useAlquiler } from "./hooks/useAlquiler";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const libros = useLibros();
   const alquiler = useAlquiler();
