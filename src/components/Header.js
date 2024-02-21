@@ -1,5 +1,8 @@
 import React from "react";
 import {RedireccionesMenu} from "./RedireccionesMenu"
+import { Link } from "react-router-dom";
+/*import {Alquilar}*/
+
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBook} from "@fortawesome/free-solid-svg-icons";
 
@@ -8,9 +11,11 @@ export const Header = () => {
         <header className="header bg-black">
             {/*<h1 className="header-text">Librería Cosmos {' '}*/}
 
-            <a href="/Libros">
+
+            <Link to="/Libros" >
                 <img className="primary-logo" src="/Title.png" alt="Título"/>
-            </a>
+            </Link>
+            
             <RedireccionesMenu float="right"/>
             {/*</h1>*/}
         </header>

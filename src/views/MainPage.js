@@ -23,7 +23,7 @@ export const MainPage = () => {
     <div className="main-page-container">
       <Busqueda setLibrosFiltrados={setLibrosFiltrados} />
       <h2>Libros</h2>
-      <div className="libros-container">
+      <div className="row">
         {!loading ? (
           librosFiltrados.map((libro, index) => (
             <Libro

@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { LibroContext } from '../context/LibroContext';
 import { LibroNotFound } from './LibroNotFound';
-
 import { Reply,Rocket } from 'react-bootstrap-icons';
+import { AlquilarLibro } from './AlquilarLibro';
 
 
 
@@ -44,7 +44,7 @@ export const LibroDetails = () => {
                             <p className="card-text"><strong className="text-info">Autor: </strong>{libro.author}</p>
                             <p className="card-text"><strong>Año de publicación: </strong> {libro.publicationYear}</p>
                             <p className="card-text"><strong>Categoría: </strong> {libro.category}</p>
-
+                            <AlquilarLibro />
 
 
 
@@ -52,9 +52,9 @@ export const LibroDetails = () => {
                         </div>
                           <div class="card-footer">
 
-                              <Link to={`/alquilar/${libro.id}`} className="btn btn-outline-dark w-100">
+{/*                              <Link to={`/alquilar/${libro.id}`} className="btn btn-outline-dark w-100">
                                   Alquilar <Rocket/>                                              
-                              </Link>                                                             
+                              </Link>     */}
                           </div>
                     </div>
 
