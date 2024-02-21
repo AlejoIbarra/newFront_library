@@ -4,7 +4,7 @@ import { LibroContext } from '../context/LibroContext';
 import { LibroNotFound } from './LibroNotFound';
 import "../styles/styles.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Reply} from 'react-bootstrap-icons';
+import { Reply,Rocket } from 'react-bootstrap-icons';
 
 
 
@@ -25,13 +25,6 @@ export const LibroDetails = () => {
 
     return (
         <>
-
-
-            
-
-
-
-
             <div className="card">
                 <div className="card-header">
                     Detalles
@@ -39,8 +32,6 @@ export const LibroDetails = () => {
                         <Link to={`/Libros`} className="link-underline-opacity-0 ml-auto">
                             Volver <Reply />
                         </Link>
-
-
                 </div>
                 <div className="row g-0">
                     <div className="col-md-4">
@@ -57,11 +48,19 @@ export const LibroDetails = () => {
 
 
 
-                           
-                           
+
 
                         </div>
+                          <div class="card-footer">
+
+                              <Link to={`/alquilar/${libro.id}`} className="btn btn-dark w-100">  
+                                  Alquilar <Rocket/>                                              
+                              </Link>                                                             
+                          </div>
                     </div>
+
+
+
                 </div>
             </div>
             {/*            <br />
